@@ -50,3 +50,19 @@ p {
   font-size: 1.05rem;
   line-height: 1.7;
 }
+.site-nav {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  color: #0C234B;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #AB0520;
+}
