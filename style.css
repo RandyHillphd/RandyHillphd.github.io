@@ -68,3 +68,48 @@ p {
   color: #AB0520;
   text-decoration: none;
 }
+h2 {
+  color: #0C234B;
+  font-size: 1.35rem;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #ddd;
+}
+
+h3 {
+  color: #0C234B;
+  font-size: 1.15rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.paper-status {
+  color: #AB0520;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.paper-description,
+.publication-authors,
+.publication-citation {
+  margin-bottom: 0.5rem;
+}
+
+details {
+  margin-top: 0.5rem;
+}
+
+summary {
+  color: #0C234B;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+summary:hover {
+  color: #AB0520;
+}
