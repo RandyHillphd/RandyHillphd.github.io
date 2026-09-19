@@ -25,3 +25,28 @@ p {
   letter-spacing: 0.02em;
   margin-top: 0;
 }
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.intro-text h1 {
+  color: #0C234B;
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.research-intro {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
