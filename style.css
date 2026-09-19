@@ -1,3 +1,10 @@
+/* =========================================================
+   Randy Hill — Academic Website
+   ========================================================= */
+
+
+/* ---------- Site foundation ---------- */
+
 body {
   max-width: 900px;
   margin: 60px auto;
@@ -11,49 +18,18 @@ body {
   background: #fff;
 }
 
-h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0.2rem;
-}
-
 p {
   margin-top: 0;
 }
-.fields {
-  font-size: 1.05rem;
-  color: #0C234B;
-  letter-spacing: 0.02em;
-  margin-top: 0;
-}
-.intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  min-height: 70vh;
-}
 
-.intro-text h1 {
-  color: #0C234B;
-  font-size: 3rem;
-  margin-bottom: 0.3rem;
-}
 
-.home-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/* ---------- Navigation ---------- */
 
-.research-intro {
-  margin-top: 2rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
 .site-nav {
   display: flex;
   gap: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
 }
@@ -68,28 +44,52 @@ p {
   color: #AB0520;
   text-decoration: none;
 }
-h2 {
+
+
+/* ---------- Site-wide typography ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
   color: #0C234B;
-  font-size: 1.35rem;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+h2 {
   margin-top: 3rem;
   margin-bottom: 1.2rem;
   padding-bottom: 0.35rem;
+
+  font-size: 1.35rem;
   border-bottom: 1px solid #ddd;
 }
 
 h3 {
-  color: #0C234B;
-  font-size: 1.15rem;
   margin-top: 1.8rem;
   margin-bottom: 0.25rem;
+
+  font-size: 1.15rem;
 }
 
+
+/* ---------- Research and publication content ---------- */
+
 .paper-status {
+  margin-bottom: 0.7rem;
+
   color: #AB0520;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85rem;
   font-weight: bold;
-  margin-bottom: 0.7rem;
 }
 
 .paper-description,
@@ -103,31 +103,72 @@ details {
 }
 
 summary {
+  display: inline-block;
+
   color: #0C234B;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
+
   cursor: pointer;
-  display: inline-block;
 }
 
 summary:hover {
   color: #AB0520;
 }
+
+
+/* ---------- Homepage ---------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  min-height: 70vh;
+}
+
+.intro-text h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+.fields {
+  margin: 0 0 1.5rem 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0C234B;
+  letter-spacing: 0.02em;
+}
+
 .affiliation {
-  margin-top: 1.5rem;
+  margin: 0 0 2rem 0;
+
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .research-intro {
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  line-height: 1.65;
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-/* Mobile layout */
-@media (max-width: 700px) {
+.home-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+
+/* ---------- Mobile layout ---------- */
+
+@media (max-width: 700px) {
   body {
     margin: 30px auto;
     padding: 0 22px;
@@ -154,63 +195,4 @@ summary:hover {
   .home-photo {
     width: 100%;
   }
-}
-/* ---------- Site-wide typography ---------- */
-
-h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-h1 {
-  color: #0C234B;
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: 1.15;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-.intro-text h1 {
-  color: #0C234B;
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: 1.15;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-
-/* ---------- Homepage spacing ---------- */
-
-.fields {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #0C234B;
-  margin: 0 0 1.5rem 0;
-}
-
-.affiliation {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0 0 2rem 0;
-}
-
-.research-intro {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin: 0;
-}
-
-
-/* ---------- Consistent page position ---------- */
-
-.site-nav {
-  margin-bottom: 3rem;
-}
-
-.intro {
-  align-items: start;
 }
