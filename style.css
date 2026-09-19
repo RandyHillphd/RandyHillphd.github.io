@@ -113,3 +113,45 @@ summary {
 summary:hover {
   color: #AB0520;
 }
+.affiliation {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.research-intro {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+
+  body {
+    margin: 30px auto;
+    padding: 0 22px;
+  }
+
+  .site-nav {
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .intro {
+    display: block;
+    min-height: auto;
+  }
+
+  .intro-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .intro-image {
+    margin-top: 35px;
+  }
+
+  .home-photo {
+    width: 100%;
+  }
+}
