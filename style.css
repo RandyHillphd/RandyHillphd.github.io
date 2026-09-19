@@ -112,16 +112,6 @@ p {
 }
 
 
-/* ---------- Interior page banner ---------- */
-
-.home-photo,
-.interior-photo {
-  display: block;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
 
 /* ---------- Site-wide typography ---------- */
 
@@ -254,7 +244,7 @@ summary:hover {
     font-size: 0.7rem;
   }
 
-  .intro-text h1 {
-    font-size: 2.5rem;
-  }
+  h1 {
+  font-size: 2.5rem;
+}
 }
