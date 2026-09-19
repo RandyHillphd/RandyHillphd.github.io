@@ -155,3 +155,62 @@ summary:hover {
     width: 100%;
   }
 }
+/* ---------- Site-wide typography ---------- */
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  color: #0C234B;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text h1 {
+  color: #0C234B;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* ---------- Homepage spacing ---------- */
+
+.fields {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0C234B;
+  margin: 0 0 1.5rem 0;
+}
+
+.affiliation {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+
+.research-intro {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* ---------- Consistent page position ---------- */
+
+.site-nav {
+  margin-bottom: 3rem;
+}
+
+.intro {
+  align-items: start;
+}
