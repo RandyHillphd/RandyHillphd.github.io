@@ -27,11 +27,11 @@ p {
 
 .site-nav {
   display: flex;
-  gap: 32px;
-  margin-bottom: 3.5rem;
-  padding-bottom: 0.8rem;
+  justify-content: center;
+  gap: 36px;
 
-  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 3.5rem 0;
+  padding: 1rem 0 0 0;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.78rem;
@@ -54,6 +54,62 @@ p {
   font-weight: bold;
 }
 
+
+/* ---------- Homepage ---------- */
+
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-photo {
+  display: block;
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+.home {
+  max-width: 900px;
+}
+
+.intro-text {
+  max-width: 690px;
+}
+
+.intro-text h1 {
+  margin: 0 0 0.7rem 0;
+
+  font-size: 3.1rem;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.affiliation {
+  margin: 0 0 1.5rem 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.fields {
+  margin: 0 0 2rem 0;
+
+  color: #0C234B;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.research-intro {
+  max-width: 620px;
+  margin: 0;
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
 /* ---------- Site-wide typography ---------- */
 
 h1,
@@ -125,61 +181,7 @@ summary:hover {
 }
 
 
-/* ---------- Homepage ---------- */
 
-.home {
-  max-width: 900px;
-}
-
-.intro-text {
-  max-width: 690px;
-  margin-bottom: 2.8rem;
-}
-
-.intro-text h1 {
-  margin: 0 0 0.7rem 0;
-
-  font-size: 3.1rem;
-  font-weight: normal;
-  line-height: 1.1;
-}
-
-.affiliation {
-  margin: 0 0 1.5rem 0;
-
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.fields {
-  margin: 0 0 2rem 0;
-
-  color: #0C234B;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.research-intro {
-  max-width: 620px;
-  margin: 0;
-
-  font-size: 1.15rem;
-  line-height: 1.7;
-}
-
-.intro-image {
-  width: 100%;
-  overflow: hidden;
-}
-
-.home-photo {
-  display: block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center 58%;
-}
 
 
 /* ---------- Mobile layout ---------- */
@@ -191,21 +193,18 @@ summary:hover {
     padding: 0 22px;
   }
 
+  .home-photo {
+    height: 170px;
+    object-position: center top;
+  }
+
   .site-nav {
     gap: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 2.5rem;
     font-size: 0.7rem;
   }
 
   .intro-text h1 {
     font-size: 2.5rem;
-  }
-
-  .intro-image {
-    margin-top: 2rem;
-  }
-
-  .home-photo {
-    height: 200px;
   }
 }
