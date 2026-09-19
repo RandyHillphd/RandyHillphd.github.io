@@ -27,11 +27,16 @@ p {
 
 .site-nav {
   display: flex;
-  gap: 28px;
-  margin-bottom: 3rem;
+  gap: 32px;
+  margin-bottom: 3.5rem;
+  padding-bottom: 0.8rem;
+
+  border-bottom: 1px solid #d9d9d9;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .site-nav a {
@@ -42,9 +47,12 @@ p {
 .site-nav a:hover,
 .site-nav a:focus {
   color: #AB0520;
-  text-decoration: none;
 }
 
+.site-nav a.active {
+  color: #AB0520;
+  font-weight: bold;
+}
 
 /* ---------- Site-wide typography ---------- */
 
@@ -119,17 +127,17 @@ summary:hover {
 
 /* ---------- Homepage ---------- */
 
-.intro {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 55px;
-  align-items: start;
-  min-height: 70vh;
+.home {
+  max-width: 900px;
+}
+
+.intro-text {
+  max-width: 690px;
+  margin-bottom: 2.8rem;
 }
 
 .intro-text h1 {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
+  margin: 0 0 0.7rem 0;
 
   font-size: 3.1rem;
   font-weight: normal;
@@ -146,29 +154,38 @@ summary:hover {
 .fields {
   margin: 0 0 2rem 0;
 
+  color: #0C234B;
   font-size: 1rem;
   line-height: 1.5;
-  color: #0C234B;
   letter-spacing: 0.02em;
 }
 
 .research-intro {
+  max-width: 620px;
   margin: 0;
 
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.7;
+}
+
+.intro-image {
+  width: 100%;
+  overflow: hidden;
 }
 
 .home-photo {
   display: block;
   width: 100%;
-  height: auto;
+  height: 310px;
+  object-fit: cover;
+  object-position: center 58%;
 }
 
 
 /* ---------- Mobile layout ---------- */
 
 @media (max-width: 700px) {
+
   body {
     margin: 30px auto;
     padding: 0 22px;
@@ -177,22 +194,18 @@ summary:hover {
   .site-nav {
     gap: 18px;
     margin-bottom: 30px;
-  }
-
-  .intro {
-    display: block;
-    min-height: auto;
+    font-size: 0.7rem;
   }
 
   .intro-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
   .intro-image {
-    margin-top: 35px;
+    margin-top: 2rem;
   }
 
   .home-photo {
-    width: 100%;
+    height: 240px;
   }
 }
