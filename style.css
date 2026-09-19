@@ -105,6 +105,9 @@ p {
 .research-intro {
   max-width: 620px;
   margin: 0;
+  padding-left: 1rem;
+
+  border-left: 3px solid #AB0520;
 
   font-size: 1.15rem;
   line-height: 1.7;
