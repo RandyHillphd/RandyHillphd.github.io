@@ -63,6 +63,8 @@ p {
   text-decoration: none;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a:focus {
   color: #AB0520;
+  text-decoration: none;
 }
