@@ -72,6 +72,14 @@ p {
   object-fit: cover;
 }
 
+.home-photo {
+  object-position: center 50%;
+}
+
+.interior-photo {
+  object-position: center 60%;
+}
+
 .home {
   max-width: 900px;
 }
