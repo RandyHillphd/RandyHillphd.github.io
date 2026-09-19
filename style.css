@@ -121,23 +121,30 @@ summary:hover {
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 55px;
   align-items: start;
   min-height: 70vh;
 }
 
 .intro-text h1 {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 
-  font-size: 2.4rem;
+  font-size: 3.1rem;
   font-weight: normal;
-  line-height: 1.15;
+  line-height: 1.1;
+}
+
+.affiliation {
+  margin: 0 0 1.5rem 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .fields {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 2rem 0;
 
   font-size: 1rem;
   line-height: 1.5;
@@ -145,17 +152,10 @@ summary:hover {
   letter-spacing: 0.02em;
 }
 
-.affiliation {
-  margin: 0 0 2rem 0;
-
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .research-intro {
   margin: 0;
 
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
 
