@@ -19,3 +19,9 @@ h1 {
 p {
   margin-top: 0;
 }
+.fields {
+  font-size: 1.05rem;
+  color: #0C234B;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
