@@ -4,6 +4,9 @@
 
 
 /* ---------- Site foundation ---------- */
+html {
+  overflow-y: scroll;
+}
 
 body {
   max-width: 900px;
