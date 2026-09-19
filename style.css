@@ -61,13 +61,12 @@ p {
   overflow: hidden;
 }
 
-.home-photo {
+.home-photo,
+.interior-photo {
   display: block;
   width: 100%;
   height: 200px;
-
   object-fit: cover;
-  object-position: center 50%;
 }
 
 .home {
@@ -115,13 +114,12 @@ p {
 
 /* ---------- Interior page banner ---------- */
 
+.home-photo,
 .interior-photo {
   display: block;
   width: 100%;
   height: 200px;
-
   object-fit: cover;
-  object-position: center 60%;
 }
 
 
